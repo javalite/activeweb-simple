@@ -1,3 +1,6 @@
+
+# ActiveWeb simple example
+
 Follow these simple steps to run this app:
 
 1. Create two empty schemas in MySQL DB:
@@ -6,7 +9,6 @@ Follow these simple steps to run this app:
 
 2. Modify JDBC connection parameters in:
     * class app.config.DbConfig
-    * jetty-env.xml
     * pom.xml
 
 3. Run the application
@@ -19,5 +21,5 @@ Follow these simple steps to run this app:
 
 
 
-If you have questions, post to: https://groups.google.com/forum/?hl=en#!forum/activeweb
+For support, post to: https://groups.google.com/forum/?hl=en#!forum/activeweb
  
