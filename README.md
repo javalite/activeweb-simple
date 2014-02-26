@@ -1,4 +1,3 @@
-
 # ActiveWeb simple example
 
 Follow these simple steps to run this app:
@@ -13,7 +12,9 @@ Follow these simple steps to run this app:
 
 3. Run the application
 
+```
     mvn jetty:run
+```
 
 4. Navigate with browser
 
