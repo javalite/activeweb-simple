@@ -18,7 +18,7 @@ Follow these simple steps to run this app:
 
 4. Navigate with browser
 
-    to: http://localhost:8080/simple-example/
+    to: http://localhost:8080/activeweb-example/
 
 
 
