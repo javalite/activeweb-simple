@@ -15,7 +15,6 @@ Follow these simple steps to run this app:
 ```
     mvn jetty:run
 ```
-
 4. Navigate with browser
 
     to: http://localhost:8080/activeweb-example/
