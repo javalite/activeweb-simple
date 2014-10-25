@@ -1,1 +1,1 @@
-mvn db-migration:new -Dname=$1
+mvn db-migrator:new -Dname=$1
