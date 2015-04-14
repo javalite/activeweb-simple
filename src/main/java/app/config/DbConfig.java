@@ -25,10 +25,7 @@ public class DbConfig extends AbstractDBConfig {
 
     public void init(AppContext context) {
 
-        environment("development").jdbc("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/simple_development", "root", "p@ssw0rd");
-        
-        environment("development").testing().jdbc("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/simple_test", "root", "p@ssw0rd");
-
+        configFile("/database.properties");
         environment("production").jndi("jdbc/simple_production");        
     }
 }
