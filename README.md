@@ -19,7 +19,7 @@ mvn jetty:run
 
 * Navigate with browser
 
-    to: [http://localhost:8080/activeweb-example/](http://localhost:8080/activeweb-example/)
+    to: [http://localhost:8080/activeweb-example/](http://localhost:8080/)
 
 
 For support, post to: https://groups.google.com/forum/?hl=en#!forum/activeweb
