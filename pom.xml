@@ -59,8 +59,9 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.2.1.v20140609</version>
+                <version>9.4.1.v20170120</version>
                 <configuration>
+                    <reload>manual</reload>
                     <scanIntervalSeconds>10000</scanIntervalSeconds>
                     <systemProperties>
                         <systemProperty>
@@ -129,5 +130,16 @@
             <scope>system</scope>
             <systemPath>${java.home}/../lib/tools.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty.websocket</groupId>
+            <artifactId>javax-websocket-server-impl</artifactId>
+            <version>9.4.1.v20170120</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
     </dependencies>
 </project>
