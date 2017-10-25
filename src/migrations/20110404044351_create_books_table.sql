@@ -1,8 +1,10 @@
+drop table books;
+
 CREATE TABLE books (
-  id  int(11) DEFAULT NULL auto_increment PRIMARY KEY,
+  id  SERIAL PRIMARY KEY,
   author VARCHAR(128),
   title VARCHAR(128),
   isbn VARCHAR(128),
-  created_at DATETIME,
-  updated_at DATETIME
-)ENGINE=InnoDB;;
+  created_at timestamp without time zone NOT NULL,
+  updated_at timestamp without time zone NOT NULL
+);

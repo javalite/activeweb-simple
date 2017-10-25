@@ -16,10 +16,12 @@ limitations under the License.
 
 package app.controllers;
 
+import org.javalite.activejdbc.Base;
 import org.javalite.activeweb.AppController;
 import org.javalite.activeweb.annotations.DELETE;
 import org.javalite.activeweb.annotations.POST;
 import app.models.Book;
+import org.javalite.common.Convert;
 
 /**
  * @author Igor Polevoy
@@ -32,7 +34,7 @@ public class BooksController extends AppController {
 
     public void show(){
         //this is to protect from URL hacking
-        Book b = (Book) Book.findById(getId());
+        Book b = (Book) Book.findById(Convert.toLong(getId()));
         if(b != null){
             view("book", b);
         }else{
