@@ -21,8 +21,9 @@
         <td>
             ${book.author}</td>
         <td>
-            <@confirm text="Are you sure you want to delete this book: " + book.title + "?" form=book.id>Delete</@confirm>
-            <@form  id=book.id action="delete" method="delete" html_id=book.id />
+            <@form  id=book.id action="delete" method="delete" html_id=book.id >
+                <button type="submit">delete</button>
+            </@form>
         </td>
     </tr>
 </#list>

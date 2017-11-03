@@ -27,6 +27,15 @@ import app.models.Book;
 public class BooksController extends AppController {                
 
     public void index(){
+
+        if("xml".equals(format())){
+            render().noLayout().contentType("text/xml");
+        }
+
+        if("json".equals(format())){
+            render().noLayout().contentType("application/json");
+        }
+
         view("books", Book.findAll().toMaps());
     }
 
