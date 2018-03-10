@@ -16,10 +16,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Server server = new Server(8080);
-        WebAppContext webapp = new WebAppContext();
-        webapp.setContextPath("/");
-        File warFile = new File("src/main/webapp");
-        webapp.setWar(warFile.getAbsolutePath());
+        WebAppContext webapp = new WebAppContext("src/main/webapp", "/");
         webapp.addAliasCheck(new AllowSymLinkAliasChecker());
         server.setHandler(webapp);
         server.start();
