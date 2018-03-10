@@ -9,8 +9,8 @@
     <name>ActiveWeb Example WebApp</name>
 
     <properties>
-        <activejdbc.version>1.4.11</activejdbc.version>
-        <activeweb.version>1.13</activeweb.version>
+        <activejdbc.version>2.0</activejdbc.version>
+        <activeweb.version>2.0</activeweb.version>
         <environments>test,development</environments>
     </properties>
 
@@ -140,6 +140,10 @@
             <artifactId>cdi-api</artifactId>
             <version>1.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
     </dependencies>
 </project>
