@@ -28,7 +28,6 @@ import app.controllers.BooksController;
 public class AppControllerConfig extends AbstractControllerConfig {
 
     public void init(AppContext context) {
-        addGlobalFilters(new TimingFilter());
         add(new DBConnectionFilter()).to(BooksController.class);
     }
 }

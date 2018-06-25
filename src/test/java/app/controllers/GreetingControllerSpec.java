@@ -37,6 +37,6 @@ public class GreetingControllerSpec extends ControllerSpec {
         //call controller
         request().get("index");
         //verify value assigned from controller to view.
-        a(assigns().get("greeting")).shouldBeEqual("Hello from class app.services.GreeterMock");
+        the(assigns().get("greeting")).shouldBeEqual("Hello from class app.services.GreeterMock");
     }
 }

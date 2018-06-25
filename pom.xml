@@ -9,8 +9,8 @@
     <name>ActiveWeb Example WebApp</name>
 
     <properties>
-        <activejdbc.version>2.0</activejdbc.version>
-        <activeweb.version>2.0</activeweb.version>
+        <activejdbc.version>2.1-SNAPSHOT</activejdbc.version>
+        <activeweb.version>2.1-SNAPSHOT</activeweb.version>
         <environments>test,development</environments>
     </properties>
 

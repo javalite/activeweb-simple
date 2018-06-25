@@ -1,3 +1,3 @@
 <div class='footer'>
-    <p>2010 - 2011 Active Web. No Rights Reserved.</p>
+    <p>2010 - 2018 Active Web. No Rights Reserved.</p>
 </div>
