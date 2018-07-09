@@ -89,8 +89,6 @@
                 </configuration>
             </plugin>
 
-
-
             <plugin>
                 <groupId>org.javalite</groupId>
                 <artifactId>activejdbc-instrumentation</artifactId>
@@ -145,4 +143,29 @@
             <systemPath>${java.home}/../lib/tools.jar</systemPath>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>snapshots1</id>
+            <name>JavaLite Snapshots1</name>
+            <url>http://repo.javalite.io/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>snapshots2</id>
+            <name>JavaLite Snapshots2</name>
+            <url>http://repo.javalite.io/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
