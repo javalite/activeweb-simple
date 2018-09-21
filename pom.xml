@@ -9,8 +9,7 @@
     <name>ActiveWeb Example WebApp</name>
 
     <properties>
-        <activejdbc.version>2.1-SNAPSHOT</activejdbc.version>
-        <activeweb.version>2.1-SNAPSHOT</activeweb.version>
+        <javalite.version>2.3-SNAPSHOT</javalite.version>
         <environments>test,development</environments>
     </properties>
 
@@ -33,12 +32,12 @@
             <plugin>
                 <groupId>org.javalite</groupId>
                 <artifactId>db-migrator-maven-plugin</artifactId>
-                <version>${activejdbc.version}</version>
+                <version>${javalite.version}</version>
                 <dependencies>
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.34</version>
+                        <version>5.1.41</version>
                     </dependency>
                 </dependencies>
                 <configuration>
@@ -82,7 +81,7 @@
             <plugin>
                 <groupId>org.javalite</groupId>
                 <artifactId>activejdbc-instrumentation</artifactId>
-                <version>${activejdbc.version}</version>
+                <version>${javalite.version}</version>
                 <executions>
                     <execution>
                         <phase>process-classes</phase>
@@ -111,12 +110,12 @@
         <dependency>
             <groupId>org.javalite</groupId>
             <artifactId>activeweb</artifactId>
-            <version>${activeweb.version}</version>
+            <version>${javalite.version}</version>
         </dependency>
         <dependency>
             <groupId>org.javalite</groupId>
             <artifactId>activeweb-testing</artifactId>
-            <version>${activeweb.version}</version>
+            <version>${javalite.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -127,7 +126,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.6.6</version>
+            <version>1.7.21</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -151,8 +150,8 @@
     <repositories>
         <repository>
             <id>snapshots1</id>
-            <name>JavaLite Snapshots1</name>
-            <url>http://repo.javalite.io/</url>
+            <name>Sonatype Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -160,16 +159,16 @@
             </snapshots>
         </repository>
     </repositories>
+
     <pluginRepositories>
         <pluginRepository>
-            <id>snapshots2</id>
-            <name>JavaLite Snapshots2</name>
-            <url>http://repo.javalite.io/</url>
+            <id>sonatype_plugin_snapshots</id>
+            <name>Sonatype Plugin Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
             <snapshots>
                 <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
 </project>
