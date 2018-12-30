@@ -9,7 +9,7 @@
     <name>ActiveWeb Example WebApp</name>
 
     <properties>
-        <javalite.version>2.3-SNAPSHOT</javalite.version>
+        <javalite.version>2.2</javalite.version>
         <environments>test,development</environments>
     </properties>
 
@@ -58,10 +58,9 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.4.1.v20170120</version>
+                <version>9.4.12.v20180830</version>
                 <configuration>
-                    <reload>manual</reload>
-                    <scanIntervalSeconds>10000</scanIntervalSeconds>
+                    <scanIntervalSeconds>0</scanIntervalSeconds>
                     <systemProperties>
                         <systemProperty>
                             <name>activejdbc.log</name>
@@ -96,11 +95,7 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-webapp</artifactId>
-            <version>9.4.1.v20170120</version>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -123,20 +118,16 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.35</version>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.21</version>
+            <version>1.7.25</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.enterprise</groupId>
-            <artifactId>cdi-api</artifactId>
-            <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>com.sun</groupId>
@@ -146,29 +137,5 @@
             <systemPath>${java.home}/../lib/tools.jar</systemPath>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>snapshots1</id>
-            <name>Sonatype Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>sonatype_plugin_snapshots</id>
-            <name>Sonatype Plugin Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
 
 </project>
