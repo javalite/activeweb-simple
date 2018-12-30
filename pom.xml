@@ -94,7 +94,12 @@
     </build>
 
     <dependencies>
-
+        <!--This is needed by app.Main class-->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+            <version>9.4.1.v20170120</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
