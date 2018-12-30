@@ -11,7 +11,17 @@
     <properties>
         <javalite.version>2.2</javalite.version>
         <environments>test,development</environments>
+        <logger-name>CONSOLE</logger-name>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>file_log</id>
+            <properties>
+                <logger-name>FILE</logger-name>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
@@ -126,9 +136,10 @@
 
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.25</version>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
         </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
