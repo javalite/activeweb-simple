@@ -9,7 +9,7 @@
     <name>ActiveWeb Example WebApp</name>
 
     <properties>
-        <javalite.version>2.2</javalite.version>
+        <javalite.version>2.3</javalite.version>
         <environments>test,development</environments>
         <logger-name>CONSOLE</logger-name>
     </properties>
