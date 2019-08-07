@@ -13,7 +13,11 @@
 <div class="main">
 <#include "header.ftl" >
     <div class="content">
+
+        "ext": [<@yield to="ext"/>]
     ${page_content}
+
+
     </div>
 <#include "footer.ftl" >
 </div>
