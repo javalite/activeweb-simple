@@ -22,5 +22,3 @@ mvn jetty:run
     to: [http://localhost:8080/](http://localhost:8080/)
 
 
-For support, post to: https://groups.google.com/forum/?hl=en#!forum/activeweb
- 
