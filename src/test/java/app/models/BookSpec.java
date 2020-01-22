@@ -16,7 +16,7 @@ limitations under the License.
 
 package app.models;
 
-import org.javalite.activeweb.DBSpec;
+import org.javalite.activejdbc.test.DBSpec;
 import org.junit.Test;
 
 import java.util.List;

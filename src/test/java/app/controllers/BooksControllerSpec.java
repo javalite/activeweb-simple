@@ -18,7 +18,6 @@ package app.controllers;
 
 import org.javalite.activeweb.DBControllerSpec;
 import app.models.Book;
-import org.javalite.test.XPathHelper;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -83,7 +82,7 @@ public class BooksControllerSpec extends DBControllerSpec {
     public void shouldShowBookByIdAndVerifyGeneratedHTML() {
         Book b = (Book) Book.findAll().get(0);
 
-        request().integrateViews().param("id",  b.getId()).get("show");
+        request().param("id",  b.getId()).get("show");
 
         Book book = (Book) assigns().get("book");
         a(book.get("title")).shouldBeEqual(b.get("title"));
